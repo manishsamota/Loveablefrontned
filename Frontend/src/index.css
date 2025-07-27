@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    /* Dark EduQuest Color System */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 84% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Purple/Blue gradient theme */
+    --primary: 237 74% 73%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 237 74% 83%;
+    --primary-dark: 247 58% 66%;
+
+    /* Secondary - Teal/Cyan */
+    --secondary: 185 84% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 185 84% 75%;
+
+    /* Success - Green */
+    --success: 150 100% 35%;
+    --success-foreground: 0 0% 100%;
+    --success-glow: 150 100% 45%;
+
+    /* Warning - Orange */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --warning-glow: 38 92% 65%;
+
+    /* Sports - Red theme */
+    --sports: 360 78% 65%;
+    --sports-foreground: 0 0% 100%;
+    --sports-dark: 360 78% 45%;
+
+    /* Arts - Pink/Purple theme */
+    --arts: 300 65% 70%;
+    --arts-foreground: 0 0% 100%;
+    --arts-dark: 300 65% 50%;
+
+    /* Analytics - Teal theme */
+    --analytics: 174 72% 56%;
+    --analytics-foreground: 0 0% 100%;
+    --analytics-dark: 174 72% 40%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 32% 25%;
+    --input: 217 32% 25%;
+    --ring: 237 74% 73%;
+
+    /* Gamification Colors */
+    --achievement-gold: 45 100% 51%;
+    --achievement-silver: 0 0% 75%;
+    --achievement-bronze: 30 100% 40%;
+    
+    /* Dark EduQuest Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(237, 74%, 73%), hsl(247, 58%, 66%));
+    --gradient-secondary: linear-gradient(135deg, hsl(185, 84%, 65%), hsl(185, 84%, 75%));
+    --gradient-success: linear-gradient(135deg, hsl(150, 100%, 35%), hsl(150, 100%, 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(222, 47%, 8%) 0%, hsl(222, 84%, 12%) 100%);
+    --gradient-sports: linear-gradient(135deg, hsl(360, 78%, 65%), hsl(360, 78%, 45%));
+    --gradient-arts: linear-gradient(135deg, hsl(300, 65%, 70%), hsl(300, 65%, 50%));
+    --gradient-analytics: linear-gradient(135deg, hsl(174, 72%, 56%), hsl(174, 72%, 40%));
+    
+    /* Enhanced Dark Shadows */
+    --shadow-glow: 0 0 40px hsl(237 74% 73% / 0.4);
+    --shadow-card: 0 20px 60px hsl(0 0% 0% / 0.3);
+    --shadow-achievement: 0 10px 30px -10px hsl(45 100% 51% / 0.4);
+    --shadow-hover: 0 32px 80px hsl(0 0% 0% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 1.5rem;
+
+    --sidebar-background: 222 84% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 237 74% 73%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 32% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32% 25%;
+    --sidebar-ring: 237 74% 73%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--gradient-hero);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
